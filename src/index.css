@@ -1,0 +1,459 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    background: none;
+}
+
+#root{
+    display: grid;
+    grid-template-rows: 60px 1fr 382px;
+    min-width: 980px;
+}
+
+.header{
+    position: sticky;
+    top: 0;
+}
+
+.header-content {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content:space-between;
+   background-color: black;
+}
+
+.player-bar-inner-wrap{
+    height: 100%;
+    padding-right: 72px;
+    width: 50%;
+}
+
+.source-info{
+    float: left;
+    height: 60px;
+    margin-right: 8px;
+    width: 28px;
+}
+
+.player-bar-artwork{
+    float: left;
+    height: 58px;
+    margin-right: 10px;
+    margin-top: 2px;
+    width: 58px;
+}
+
+ul.media-controls li{
+    display: inline;
+    float: left;
+    list-style-type: none
+}
+
+.player-bar-btn--previous,
+.player-bar-btn--play,
+.player-bar-btn--next{
+    height: 60px;
+    opacity: .3;
+    width: 34px;
+}
+
+.player-bar-btn--previous::before,
+.player-bar-btn--play::before,
+.player-bar-btn--next::before{
+    background-repeat: no-repeat;
+    content: "";
+    height: 50px;
+    margin-left: -20px;
+    margin-top: -25px;
+    position: absolute;
+    right: auto;
+    width: 40px;
+}
+
+.player-bar-btn--previous::before{
+    background-image: url(https://www.last.fm/static/images/player_controls.574646cbe24e.png);
+    background-position: 0 0;
+}
+
+.player-bar-btn--play::before{
+    background-image: url(https://www.last.fm/static/images/player_controls.574646cbe24e.png);
+    background-position: -40px 0;
+}
+
+.player-bar-btn--next::before{
+    background-image: url(https://www.last.fm/static/images/player_controls.574646cbe24e.png);
+    background-position: -120px 0;
+}
+
+.player-bar-now-playing{
+    align-items: center;
+    display: flex;
+    height: 100%;
+    padding-left: 12px;
+}
+
+.player-bar-now-playing-inner-wrap{
+    flex: 1;
+    min-width: 0;
+}
+
+.player-bar-progress{
+    background: #333;
+    height: 2px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.masthead {
+    display: flex;
+    flex-direction: row;
+    padding-left: 72px;
+}
+
+.masthead-logo{
+    background-image: url(https://www.last.fm/static/images/logo_static.adb61955725c.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 40px;
+    margin-left: 45%;
+    margin-top: 12px;
+    width: 104px;
+}
+
+.masthead-inner-wrap{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.masthead-search-toggle{
+    opacity: .8;
+    height: 40px;
+    width: 32px;
+}
+
+.masthead-search-toggle::before{
+    background-image: url(https://www.last.fm/static/images/icons/search_16.bde37072495a.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    position: absolute;
+    margin-top: 12px;
+    margin-left: 8px;
+    content: "";
+    height: 16px;
+    width: 16px;
+}
+
+.navlist--more{
+    display: flex;
+    flex-direction: row;
+}
+
+ul.navlist-items li{
+    display: inline;
+    float: left;
+    list-style-type: none;
+}
+
+.masthead-nav-control{
+    opacity: .85;
+    color: #fff;
+    font-family: Barlow,Open Sans,Lucida Grande,Helvetica Neue,Helvetica,Arial,Sans-serif;
+    font-size: 14px;
+    line-height: 40px;
+    margin-left: 10px;
+    position: relative;
+} 
+
+.site-auth{
+    display: flex;
+    align-items: center;
+    float: left;
+    margin-left: 20px;
+}
+
+.site-auth-control{
+    opacity: .85;
+    color: #fff;
+    font-family: Barlow,Open Sans,Lucida Grande,Helvetica Neue,Helvetica,Arial,Sans-serif;
+    font-size: 14px;
+    line-height: 40px;
+    position: relative;
+}
+
+li.site-auth-item{
+    margin-left: 10px;
+}
+
+li.site-auth-item::marker{
+    color:#fff;
+    font-size: 14px;
+}
+
+.btn-secondary{
+    color: #222;
+    background-color: #eee;
+    font-size: 12px;
+    border-radius: 3px;
+    width: 80px;
+    margin-left: 10px;
+    margin-right: 20px;
+    line-height: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    font-family: Barlow,Open Sans,Lucida Grande,Helvetica Neue,Helvetica,Arial,Sans-serif;
+}
+
+
+.content{
+    width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.content-top-header{
+    margin-top: 48px;
+    font-size: 44px;
+    font-weight: 700;
+    letter-spacing: -.4px;
+    line-height: 54px;
+    text-align: center;
+    color: #222;
+    font-family: Barlow,Open Sans,Lucida Grande,Helvetica Neue,Helvetica,Arial,Sans-serif;
+}
+
+.container-page-content{
+    padding-bottom: 48px;
+    padding-top: 48px;
+}
+
+.music-section-heading{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    padding-bottom: 10px;
+    text-align: center;
+    color: #222;
+    font-family: Barlow,Open Sans,Lucida Grande,Helvetica Neue,Helvetica,Arial,Sans-serif;
+}
+
+.music-section-heading::after{
+    background: #b90000;
+    content: "";
+    display: block;
+    height: 2px;
+    width: 50px;
+    margin: 10px auto;
+}
+
+.music-more-artists{
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+
+.music-more-artists-item-wrap{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.music-more-artists-item{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+.music-more-artists-item-name{
+    margin-top: 12px;
+    font-family: Barlow,Open Sans,Lucida Grande,Helvetica Neue,Helvetica,Arial,Sans-serif;
+    font-size: 14px;
+}
+
+.avatar img{
+    border-radius: 50%;
+    height: 138px;
+    width: 138px;
+}
+
+.tag{
+    color: #999;
+    font-family: Barlow,Open Sans,Lucida Grande,Helvetica Neue,Helvetica,Arial,Sans-serif;
+    font-size: 11px;
+    margin-top: 5px;
+}
+
+.column-tracks{
+    margin-top: 24px;
+    list-style-type: none;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(3,300px);
+    grid-template-rows: repeat(3,60px);
+    grid-gap: 24px 20px;
+}
+
+.column-tracks-item{
+    display: flex;
+    flex-direction: row;
+}
+
+.media-item-tracks{
+    height: 60px;
+    width: 60px;
+}
+
+.media-item-tracks img{
+    height: 100%;
+    width: 100%;
+}
+
+.media-item-tracks-info{
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+    min-height: 60px;
+}
+
+.column-tracks-item-name{
+    color: #222;
+    font-family: Barlow,Open Sans,Lucida Grande,Helvetica Neue,Helvetica,Arial,Sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.column-tracks-item-artist{
+    font-family: Barlow,Open Sans,Lucida Grande,Helvetica Neue,Helvetica,Arial,Sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.tags-list{
+    font-family: Barlow,Open Sans,Lucida Grande,Helvetica Neue,Helvetica,Arial,Sans-serif;
+    color: #999;
+    font-size: 12px;
+    line-height: 21px;
+}
+
+.footer{
+    background-color: #111;
+    padding-top: 48px;
+}
+
+.footer-top{
+    padding-bottom: 48px;
+}
+
+.footer-container{
+    width: 980px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer-top-row{
+    display: flex;
+    flex-direction: row;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.footer-top-col{
+    width: 20%;
+}
+
+.footer-heading{
+    color: #666;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 18px;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    font-family: Barlow,Open Sans,Lucida Grande,Helvetica Neue,Helvetica,Arial,Sans-serif;
+}
+
+.footer-links{
+    list-style-type: none;
+    color: #fff;
+    font-size: 14px;
+    line-height: 21px;
+    font-family: Barlow,Open Sans,Lucida Grande,Helvetica Neue,Helvetica,Arial,Sans-serif;
+}
+
+.footer-bottom{
+    border-top: 1px solid #222;
+    padding-bottom: 48px;
+    padding-top: 18px;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.language-selector{
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-language{
+    margin-right: 10px;
+    list-style-type: none;
+    color: #666;
+    font-family: Barlow,Open Sans,Lucida Grande,Helvetica Neue,Helvetica,Arial,Sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.footer-language--active{
+    color: #fff;
+}
+
+.logo{
+    font-size: 12px;
+    line-height: 21px;
+    color: #fff;
+    font-family: Barlow,Open Sans,Lucida Grande,Helvetica Neue,Helvetica,Arial,Sans-serif;
+    text-align: right;
+}
+
+.footer-timezone{
+    color: #666;
+    margin-top: 6px;
+    font-family: Barlow,Open Sans,Lucida Grande,Helvetica Neue,Helvetica,Arial,Sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.footer-timezone strong{
+    color: #fff;
+}
+
+.footer-legal{
+    font-size: 12px;
+    line-height: 18px;
+    margin-top: 12px;
+}
+
+.footer-legal p{
+    font-family: Barlow,Open Sans,Lucida Grande,Helvetica Neue,Helvetica,Arial,Sans-serif;
+    color: #666;
+    font-size: 12px;
+    line-height: 18px;
+}

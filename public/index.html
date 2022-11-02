@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>React App</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root">
+      <header class="header">
+        <section class="header-content">
+        <div class="player-bar-inner-wrap">
+          <a class="player-bar-artwork">
+            <img src="https://www.last.fm/static/images/defaults/player_default_album.430223706b14.png" height="58" width="58"/>
+          </a>
+          <div class="source-info">
+          </div>
+          <div>
+            <ul class="media-controls">
+              <li>
+                <button class="player-bar-btn--previous"></button>
+              </li>
+              <li>
+                <button class="player-bar-btn--play"></button>
+              </li>
+              <li>
+                <button class="player-bar-btn--next"></button>
+              </li>
+            </ul>
+          </div>
+          <div class="player-bar-now-playing">
+            <div class="player-bar-now-playing-inner-wrap">
+              <p>&nbsp;</p>
+            </div>
+          </div>
+          <div class="player-bar-progress">
+          </div>
+        </div>
+
+        <div class="masthead-logo">
+          <a href="/"></a>
+        </div>
+        
+        <div class="masthead">
+          <div class="masthead-inner-wrap">
+            <a class="masthead-search-toggle"></a>
+            <div class="navlist--more">
+              <ul class="navlist-items">
+                <li>
+                  <a class="masthead-nav-control">Live</a>
+                </li>
+                <li>
+                  <a class="masthead-nav-control">Music</a>
+                </li>
+                <li>
+                  <a class="masthead-nav-control">Charts</a>
+                </li>
+                <li>
+                  <button class="masthead-nav-control">More...</button>
+                </li>
+              </ul>
+            </div>
+        </div> 
+
+        <ul class="site-auth">
+          <li class="site-auth-item">
+            <a class="site-auth-control">Log in</a>
+          </li>
+        </ul>
+        <a class="btn-secondary">SING UP</a>
+        </section>
+      </header>
+  
+      <main class="content">
+          <div>
+            <h1 class="content-top-header">
+              Music
+            </h1>
+            <div class="container-page-content">
+              <section class="music-section">
+                <h2 class="music-section-heading">Hot right now</h2>
+                <ol class="music-more-artists">
+                  <li class="music-more-artists-item-wrap">
+                    <div class="music-more-artists-item">
+                      <div class="media-item">
+                        <span class="avatar">
+                          <img src="https://lastfm.freetls.fastly.net/i/u/300x300/f67b3747a6e31aea5a5fae1fdb06d906.jpg">
+                        </span>
+                      </div>
+                      <h3 class="music-more-artists-item-name">Jin</h3>
+                      <h4 class="tag">rap • bts • hip-hop</h4>
+                    </div>
+                  </li>
+
+                  <li class="music-more-artists-item-wrap">
+                    <div class="music-more-artists-item">
+                      <div class="media-item">
+                        <span class="avatar">
+                          <img src="https://lastfm.freetls.fastly.net/i/u/300x300/8ee856aa702a3e01ddede54af3380bf4.jpg">
+                        </span>
+                      </div>
+                      <h3 class="music-more-artists-item-name">Kanye West</h3>
+                      <h4 class="tag">hip-hop • rap • hip-hop</h4>
+                    </div>
+                  </li>
+
+                  <li class="music-more-artists-item-wrap">
+                    <div class="music-more-artists-item">
+                      <div class="media-item">
+                        <span class="avatar">
+                          <img src="https://lastfm.freetls.fastly.net/i/u/300x300/9e594670d75384b1a2b2432a020a3aa7.jpg">
+                        </span>
+                      </div>
+                      <h3 class="music-more-artists-item-name">Ken Carson</h3>
+                      <h4 class="tag">opium • rage • trap</h4>
+                    </div>
+                  </li>
+
+                  <li class="music-more-artists-item-wrap">
+                    <div class="music-more-artists-item">
+                      <div class="media-item">
+                        <span class="avatar">
+                          <img src="https://lastfm.freetls.fastly.net/i/u/300x300/98c7ac4149d5e18c569800e0821968a9.jpg">
+                        </span>
+                      </div>
+                      <h3 class="music-more-artists-item-name">Baby Keem</h3>
+                      <h4 class="tag">rap • hip-hop • trap</h4>
+                    </div>
+                  </li>
+
+                  <li class="music-more-artists-item-wrap">
+                    <div class="music-more-artists-item">
+                      <div class="media-item">
+                        <span class="avatar">
+                          <img src="https://lastfm.freetls.fastly.net/i/u/300x300/e99eefc7294dbdb0b5402d3b47004bd5.jpg">
+                        </span>
+                      </div>
+                      <h3 class="music-more-artists-item-name">Playboi Carti</h3>
+                      <h4 class="tag">trap • hip-hop • cloud rap</h4>
+                    </div>
+                  </li>
+
+                  <li class="music-more-artists-item-wrap">
+                    <div class="music-more-artists-item">
+                      <div class="media-item">
+                        <span class="avatar">
+                          <img src="https://lastfm.freetls.fastly.net/i/u/300x300/1d4ccfe034d2f7b880146f5523f3987d.jpg">
+                        </span>
+                      </div>
+                      <h3 class="music-more-artists-item-name">Drake</h3>
+                      <h4 class="tag">hip-hop • rap • rnb</h4>
+                    </div>
+                  </li>
+
+                  <li class="music-more-artists-item-wrap">
+                    <div class="music-more-artists-item">
+                      <div class="media-item">
+                        <span class="avatar">
+                          <img src="https://lastfm.freetls.fastly.net/i/u/300x300/725cbf01f1b2b49bf17b3cb6e956283b.jpg">
+                        </span>
+                      </div>
+                      <h3 class="music-more-artists-item-name">The Weeknd</h3>
+                      <h4 class="tag">rnb • electronic • canadian</h4>
+                    </div>
+                  </li>
+
+                  <li class="music-more-artists-item-wrap">
+                    <div class="music-more-artists-item">
+                      <div class="media-item">
+                        <span class="avatar">
+                          <img src="https://lastfm.freetls.fastly.net/i/u/300x300/ab7a6339205f9c9ac97069f5ce0cf103.jpg">
+                        </span>
+                      </div>
+                      <h3 class="music-more-artists-item-name">Kendrick Lamar</h3>
+                      <h4 class="tag">rap • hip-hop • hip-hop</h4>
+                    </div>
+                  </li>
+
+                  <li class="music-more-artists-item-wrap">
+                    <div class="music-more-artists-item">
+                      <div class="media-item">
+                        <span class="avatar">
+                          <img src="https://lastfm.freetls.fastly.net/i/u/300x300/0cbe15b8d7aeff2b90190c0c7bc1f5b2.jpg">
+                        </span>
+                      </div>
+                      <h3 class="music-more-artists-item-name">Tyler, the Creator</h3>
+                      <h4 class="tag">rap • ofwgkta • hip-hop</h4>
+                    </div>
+                  </li>
+
+                  <li class="music-more-artists-item-wrap">
+                    <div class="music-more-artists-item">
+                      <div class="media-item">
+                        <span class="avatar">
+                          <img src="https://lastfm.freetls.fastly.net/i/u/300x300/a9788abf3dd8ebd18e55ec6809c8995c.jpg">
+                        </span>
+                      </div>
+                      <h3 class="music-more-artists-item-name">Arctic Monkeys</h3>
+                      <h4 class="tag">indie rock • indie • british</h4>
+                    </div>
+                  </li>
+
+                  <li class="music-more-artists-item-wrap">
+                    <div class="music-more-artists-item">
+                      <div class="media-item">
+                        <span class="avatar">
+                          <img src="https://lastfm.freetls.fastly.net/i/u/300x300/d6e904e50bb79e7877711efe9463c675.jpg">
+                        </span>
+                      </div>
+                      <h3 class="music-more-artists-item-name">Juice WRLD</h3>
+                      <h4 class="tag">rap • emo rap • hip-hop</h4>
+                    </div>
+                  </li>
+
+                  <li class="music-more-artists-item-wrap">
+                    <div class="music-more-artists-item">
+                      <div class="media-item">
+                        <span class="avatar">
+                          <img src="https://lastfm.freetls.fastly.net/i/u/300x300/58e50b952de3f500384d3f45d8edb7df.jpg">
+                        </span>
+                      </div>
+                      <h3 class="music-more-artists-item-name">Bladee</h3>
+                      <h4 class="tag">trap • hip-hop • cloud trap</h4>
+                    </div>
+                  </li>
+
+                </ol>
+              </section>
+            </div>
+
+            <div class="container-page-content">
+              <section class="music-section">
+                <h2 class="music-section-heading">Popular tracks</h2>
+                <ol class="column-tracks">
+                  <li>
+                    <div class="column-tracks-item">
+                      <div class="media-item-tracks">
+                        <img src="https://lastfm.freetls.fastly.net/i/u/300x300/0fe6ceb1724e7c44f483413b011b391e.jpg">
+                      </div>
+                      <div class="media-item-tracks-info">
+                        <h3 class="column-tracks-item-name">The Astronaut</h3>
+                        <p class="column-tracks-item-artist">Jin</p>
+                        <p class="tags-list">rap • bts • hip-hop</p>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="column-tracks-item">
+                      <div class="media-item-tracks">
+                        <img src="https://lastfm.freetls.fastly.net/i/u/300x300/ab707b9f7cb3321ccdf5aad2b16c825b.jpg">
+                      </div>
+                      <div class="media-item-tracks-info">
+                        <h3 class="column-tracks-item-name">Bejeweled</h3>
+                        <p class="column-tracks-item-artist">Taylor Swift</p>
+                        <p class="tags-list">pop • singer-songwriter • electronic</p>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="column-tracks-item">
+                      <div class="media-item-tracks">
+                        <img src="https://lastfm.freetls.fastly.net/i/u/300x300/66d3ab40aa56c8cb83c2751dae5bc672.jpg">
+                      </div>
+                      <div class="media-item-tracks-info">
+                        <h3 class="column-tracks-item-name">Yet to Come</h3>
+                        <p class="column-tracks-item-artist">BTS</p>
+                        <p class="tags-list">k-pop • bts • korean</p>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="column-tracks-item">
+                      <div class="media-item-tracks">
+                        <img src="https://lastfm.freetls.fastly.net/i/u/300x300/47403415f97336603c88ea4c1062d4b1.jpg">
+                      </div>
+                      <div class="media-item-tracks-info">
+                        <h3 class="column-tracks-item-name">ANTIFRAGILE</h3>
+                        <p class="column-tracks-item-artist">LE SSERAFIM</p>
+                        <p class="tags-list">reggaeton • k-pop</p>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="column-tracks-item">
+                      <div class="media-item-tracks">
+                        <img src="https://lastfm.freetls.fastly.net/i/u/300x300/7f6eded6cfe999ddc394bbe709defc43.jpg">
+                      </div>
+                      <div class="media-item-tracks-info">
+                        <h3 class="column-tracks-item-name">Shirt</h3>
+                        <p class="column-tracks-item-artist">SZA</p>
+                        <p class="tags-list">myspotigrambot</p>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="column-tracks-item">
+                      <div class="media-item-tracks">
+                        <img src="https://lastfm.freetls.fastly.net/i/u/300x300/c7f947f888d002fc3d84b38cfa96829c.jpg">
+                      </div>
+                      <div class="media-item-tracks-info">
+                        <h3 class="column-tracks-item-name">Just Wanna Rock</h3>
+                        <p class="column-tracks-item-artist">Lil Uzi Vert</p>
+                        <p class="tags-list">jersey club • lil uzi vert</p>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="column-tracks-item">
+                      <div class="media-item-tracks">
+                        <img src="https://lastfm.freetls.fastly.net/i/u/300x300/ad14504eb8a61b62b84d9aaf9eab6de0.jpg">
+                      </div>
+                      <div class="media-item-tracks-info">
+                        <h3 class="column-tracks-item-name">Super Tuna</h3>
+                        <p class="column-tracks-item-artist">Jin</p>
+                        <p class="tags-list">pop • folk • k-pop</p>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="column-tracks-item">
+                      <div class="media-item-tracks">
+                        <img src="https://lastfm.freetls.fastly.net/i/u/300x300/b11feab3d5951f275dc5258774a3a0ea.jpg">
+                      </div>
+                      <div class="media-item-tracks-info">
+                        <h3 class="column-tracks-item-name">Unholy (feat. Kim Petras)</h3>
+                        <p class="column-tracks-item-artist">Sam Smith</p>
+                        <p class="tags-list">hyperpop • pop • electropop</p>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="column-tracks-item">
+                      <div class="media-item-tracks">
+                        <img src="https://lastfm.freetls.fastly.net/i/u/300x300/70ff23ed846e3e4a14717863e71ba8dc.jpg">
+                      </div>
+                      <div class="media-item-tracks-info">
+                        <h3 class="column-tracks-item-name">MORE</h3>
+                        <p class="column-tracks-item-artist">j-hope</p>
+                        <p class="tags-list">rock • rap • hip-hop</p>
+                      </div>
+                    </div>
+                  </li>
+                </ol>
+              </section>
+            </div>
+          </div>
+      </main>
+  
+      <footer class="footer">
+        <div class="footer-top">
+          <div class="footer-container">
+            <div class="footer-top-row">
+
+              <div class="footer-top-col">
+                <h2 class="footer-heading">Company</h2>
+                <ul class="footer-links">
+                  <li>
+                    <p>About Last.fm</p>
+                  </li>
+                  <li>
+                    <p>Contact Us</p>
+                  </li>
+                  <li>
+                    <p>Jobs</p>
+                  </li>
+                </ul>
+              </div> 
+
+              <div class="footer-top-col">
+                <h2 class="footer-heading">Help</h2>
+                <ul class="footer-links">
+                  <li>
+                    <p>Track My Music</p>
+                  </li>
+                  <li>
+                    <p>Community Support</p>
+                  </li>
+                  <li>
+                    <p>Community Guidelines</p>
+                  </li>
+                  <li>
+                    <p>Help</p>
+                  </li>
+                </ul>
+              </div> 
+
+              <div class="footer-top-col">
+                <h2 class="footer-heading">Goodies</h2>
+                <ul class="footer-links">
+                  <li>
+                    <p>Download Scrobbler</p>
+                  </li>
+                  <li>
+                    <p>Developer API</p>
+                  </li>
+                  <li>
+                    <p>Free Music Downloads</p>
+                  </li>
+                  <li>
+                    <p>Merchandise</p>
+                  </li>
+                </ul>
+              </div> 
+
+              <div class="footer-top-col">
+                <h2 class="footer-heading">Account</h2>
+                <ul class="footer-links">
+                  <li>
+                    <p>Sign Up</p>
+                  </li>
+                  <li>
+                    <p>Log In</p>
+                  </li>
+                  <li>
+                    <p>Subscribe</p>
+                  </li>
+                </ul>
+              </div> 
+
+              <div class="footer-top-col">
+                <h2 class="footer-heading">Follow Us</h2>
+                <ul class="footer-links">
+                  <li>
+                    <p>Facebook</p>
+                  </li>
+                  <li>
+                    <p>Twitter</p>
+                  </li>
+                  <li>
+                    <p>Instagram</p>
+                  </li>
+                  <li>
+                    <p>YouTube</p>
+                  </li>
+                </ul>
+              </div> 
+
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div class="footer-container">
+            <div class="row">
+
+              <div class="col-xs-12 col-sm-9">
+                <ul class="language-selector">
+                  <li class="footer-language footer-language--active">
+                    <strong>English</strong>
+                  </li>
+
+                  <li class="footer-language">
+                    <strong>Deutsch</strong>
+                  </li>
+
+                  <li class="footer-language">
+                    <strong>Español</strong>
+                  </li>
+
+                  <li class="footer-language">
+                    <strong>Français</strong>
+                  </li>
+
+                  <li class="footer-language">
+                    <strong>Italiano</strong>
+                  </li>
+
+                  <li class="footer-language">
+                    <strong>日本語</strong>
+                  </li>
+
+                  <li class="footer-language">
+                    <strong>Polski</strong>
+                  </li>
+
+                  <li class="footer-language">
+                    <strong>Português</strong>
+                  </li>
+
+                  <li class="footer-language">
+                    <strong>Русский</strong>
+                  </li>
+
+                  <li class="footer-language">
+                    <strong>Svenska</strong>
+                  </li>
+
+                  <li class="footer-language">
+                    <strong>Türkçe</strong>
+                  </li>
+
+                  <li class="footer-language">
+                    <strong>简体中文</strong>
+                  </li>
+
+                </ul>
+
+                <p class="footer-timezone">
+                  <span>Time zone:
+                    <strong>Europe/Moscow</strong>
+                  </span>
+                </p>
+
+                <div class="footer-legal">
+                  <p>
+                    CBS Interactive © 2022 Last.fm Ltd. All rights reserved • Terms of Use • Privacy Policy • Legal Policies • Cookies Policy 
+                  </p>
+                  <p>
+                    • Cookie Information • Jobs at ViacomCBS • Last.fm Music
+                  </p>
+                </div>
+              </div>
+
+              <div class="logo">
+                <p>Audioscrobbler</p>
+                <img src="https://www.last.fm/static/images/footer_logo@2x.49ca51948b0a.png" width="37" height="20">
+
+              </div>
+            </div>
+          </div>
+        </div>
+  
+      </footer>
+    </div>  
+  </body>
+</html>
